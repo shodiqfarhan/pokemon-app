@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DetailPokemon from "../pages/DetailPokemon";
 import Home from "../pages/index";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/detail/:poke_name" element={<DetailPokemon />} />
       </Routes>
     </BrowserRouter>
   );
